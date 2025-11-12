@@ -32,6 +32,7 @@ def login():
 			return r({'is_login':0},0,'欢迎登录：'+(user.name))
 	return r({},1,'账号密码错误')
 #首页
+@account.route('/')
 @account.route('/index',methods=['GET'])
 def index():
 	data={}

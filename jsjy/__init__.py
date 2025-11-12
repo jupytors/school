@@ -21,6 +21,6 @@ def create_app():
 		# print(request.endpoint)
 		if 'logged_in' not in session and request.endpoint not in ('account.login','static'):
 			return redirect('/login')
-		else:
-			return redirect('/index')
+		#else:
+		#	return redirect('/index')
 	return app
